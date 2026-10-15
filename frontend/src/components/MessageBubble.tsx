@@ -1,0 +1,2 @@
+import ReactMarkdown from 'react-markdown'; import type {Message} from '../types'; import {SourceList} from './SourceList';
+export function MessageBubble({message}:{message:Message}){return <div className={`message ${message.role}`}>{message.role==='assistant'?<div className="markdown"><ReactMarkdown>{message.content}</ReactMarkdown></div>:<div>{message.content}</div>}{message.sources?.length?<SourceList sources={message.sources}/>:null}</div>}

@@ -1,0 +1,1 @@
+.waiting{display:flex;align-items:center;gap:10px;color:#465a75;font-size:14px}.waiting i{display:inline-block;width:8px;height:8px;border-radius:50%;background:#256bc0;animation:pulse 1s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:.25;transform:scale(.8)}50%{opacity:1;transform:scale(1.2)}}
